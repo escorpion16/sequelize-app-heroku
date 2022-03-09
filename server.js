@@ -17,8 +17,6 @@ sequelize
   .then(() => console.log('Database synced'))
   .catch((err) => console.log(err));
 
-const PORT = process.env.PORT || 4000;
-
-app.listen(PORT, () => {
-  console.log('Express app running' + PORT);
+app.listen(4000, () => {
+  console.log('Express app running');
 });
